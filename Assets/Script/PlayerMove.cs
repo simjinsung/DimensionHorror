@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     {
         
         float xMove = Input.GetAxis("Horizontal") * movePower * Time.deltaTime;
-        float yMove = Input.GetAxis("Vertical") * movePower/2 * Time.deltaTime;
+        float yMove = Input.GetAxis("Vertical") * 2 * movePower/3 * Time.deltaTime;
         this.transform.Translate(new Vector3 (xMove, yMove , 0));
     }
 }
